@@ -16,15 +16,25 @@
 
 <body>
     <div id="app">
-        <div>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div v-for="disc in discList" class="col-4">
+                        <div class="card m-5">
+                            <img class="card-img-top" :src="disc.poster" alt="disc-poster">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">{{disc.title}}</h5>
+                                <p class="card-text">{{disc.author}}</p>
+                                <p class="card-text">{{disc.year}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
 
-            {{discList}}
-
-        </div>
-
+        
     </div>
-
-
     <script src="./JS/main.js"></script>
 </body>
 
