@@ -19,7 +19,7 @@
         <main>
             <div class="container">
                 <div class="row">
-                    <div v-for="disc in discList" class="col-4">
+                    <div v-for="disc in discsList" class="col-4">
                         <div class="card m-5">
                             <img class="card-img-top" :src="disc.poster" alt="disc-poster">
                             <div class="card-body text-center">
@@ -32,8 +32,6 @@
                 </div>
             </div>
         </main>
-
-        
     </div>
     <script src="./JS/main.js"></script>
 </body>

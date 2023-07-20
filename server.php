@@ -11,7 +11,7 @@ $exposedArray = [];
 if (!is_null($decodedJson)) {
     $exposedArray = $decodedJson;
 } else {
-    // TODO: throw 500 error 
+    http_response_code(500);
     exit;
 }
 

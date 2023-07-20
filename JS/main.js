@@ -4,7 +4,7 @@ createApp({
     data() {
         return {
             urlAdress: './server.php',
-            discList: [],
+            discsList: [],
             apiKey: "a5678786789678dfg6ds86s89g7",
         }
     },
@@ -19,7 +19,7 @@ createApp({
                 })
                 .then((response) => {
                     console.log(response);
-                    this.discList = response.data;
+                    this.discsList = response.data;
                 })
                 .catch(function (error) {
                     console.log(error);
